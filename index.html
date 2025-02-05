@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Test</title>
+    <style>
+.instructions {
+    background-color: #f4f4f9; /* Light background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between instructions and quiz */
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Same width as the quiz container */
+    font-family: "Poppins", serif;
+    margin: auto;
+}
+
+.instructions h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.instructions strong {
+    color: #2575fc; /* Highlight the number of questions with a different color */
+}
+
+.instructions .start-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.instructions .start-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reversed gradient on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.instructions .start-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+button:active {
+    transform: translateY(2px); /* Slight push down when clicked */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Reduced shadow when active */
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="instructions">
+        <h3>Welcome to the MCQ Quiz!</h3>
+        <p>There are <strong>10 questions</strong> in total. Please attempt all the questions.</p>
+        <p>To start your test, click the button below.</p>
+        <button class="start-button"><a href="quiz.html">Start Quiz</a></button>
+    </div>
+    
+    
+</body>
+</html>
