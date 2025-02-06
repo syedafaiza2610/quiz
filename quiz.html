@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0; /* Prevent any default margin */
+    margin: 0;
 }
 
 .quiz-container {
@@ -28,9 +28,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 1000px;
-    max-height: 80vh; /* Allowing max height but not exceeding 80% of viewport height */
-    overflow-y: auto; /* Enable scrolling if content overflows */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-height: 80vh;
+    overflow-y: auto; 
+    overflow-x: hidden; 
 }
 
 h1 {
@@ -45,26 +45,26 @@ h1 {
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
     color: white;
     border: none;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 25px; 
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 button:hover {
-    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse the gradient on hover */
-    transform: translateY(-3px); /* Lift the button on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background: linear-gradient(135deg, #2575fc, #6a11cb); 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
 }
 
 button:active {
-    transform: translateY(2px); /* Slight push down when clicked */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Reduced shadow when active */
+    transform: translateY(2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); 
 }
 
   </style>
@@ -158,6 +158,96 @@ button:active {
                 </label><br>
                 <label><input type="radio" name="q10" value="D"> D) Resolve merge conflicts </label>
             </div>
+            <div class="question">
+                <p>11. Which Programming language has been used to write Git? </p>
+                <label><input type="radio" name="q11" value="A"> A) Java
+                </label><br>
+                <label><input type="radio" name="q11" value="B"> B)C</label><br>
+                <label><input type="radio" name="q11" value="C"> C)Python
+                </label><br>
+                <label><input type="radio" name="q11" value="D"> D) C++</label>
+            </div>
+            <div class="question">
+                <p>12.__________ refers to the process of obtaining a copy of an existing git repository? </p>
+                <label><input type="radio" name="q12" value="A"> A) Commiting
+                </label><br>
+                <label><input type="radio" name="q12" value="B"> B) Editing </label><br>
+                <label><input type="radio" name="q12" value="C"> C) Deleting
+                </label><br>
+                <label><input type="radio" name="q12" value="D"> D) Cloning</label>
+            </div>
+            <div class="question">
+                <p>13.What serves as a pre-requisite for collaboration? </p>
+                <label><input type="radio" name="q13" value="A"> A) Synchronization
+                </label><br>
+                <label><input type="radio" name="q13" value="B"> B) Physical link establishment </label><br>
+                <label><input type="radio" name="q13" value="C"> C)Merging
+                </label><br>
+                <label><input type="radio" name="q13" value="D"> D) Updation</label>
+            </div>
+            <div class="question">
+                <p>14. ____________ maintains particulars of changes made to a file or set of files over a period of time. </p>
+                <label><input type="radio" name="q14" value="A"> A) Websites
+                </label><br>
+                <label><input type="radio" name="q14" value="B"> B) Version Control System </label><br>
+                <label><input type="radio" name="q14" value="C"> C) Internet Protocols
+                </label><br>
+                <label><input type="radio" name="q14" value="D"> D) SE </label>
+            </div>
+            <div class="question">
+                <p>15. What happens to a merging branch after a successful merge?</p>
+                <label><input type="radio" name="q15" value="A"> A)It gets deleted
+                </label><br>
+                <label><input type="radio" name="q15" value="B"> B) It gets copied </label><br>
+                <label><input type="radio" name="q15" value="C"> C)it stays there as it is
+                </label><br>
+                <label><input type="radio" name="q15" value="D"> D) None of These </label>
+            </div>
+            <div class="question">
+                <p>16. Which Git command would you use to stage only modified files in the current directory, excluding new files?  </p>
+                <label><input type="radio" name="q16" value="A"> A)git stage-modified 
+                </label><br>
+                <label><input type="radio" name="q16" value="B"> B)git add -m </label><br>
+                <label><input type="radio" name="q16" value="C"> C)git add -u 
+                </label><br>
+                <label><input type="radio" name="q16" value="D"> D) git update </label>
+            </div>
+            <div class="question">
+                <p>17.What command is used to initialize a new Git repository in a Local directory? </p>
+                <label><input type="radio" name="q17" value="A"> A) git init 
+                </label><br>
+                <label><input type="radio" name="q17" value="B"> B) git add </label><br>
+                <label><input type="radio" name="q17" value="C"> C) git clone 
+                </label><br>
+                <label><input type="radio" name="q17" value="D"> D)  git start </label>
+            </div>
+            <div class="question">
+                <p>18. What is a fast-forward merge in Git? </p>
+                <label><input type="radio" name="q18" value="A"> A)A merge where conflicts are automatically resolved 
+                </label><br>
+                <label><input type="radio" name="q18" value="B"> B)A merge that discards changes from one of the branches</label><br>
+                <label><input type="radio" name="q18" value="C"> C)A merge that involves creating a new commit 
+                </label><br>
+                <label><input type="radio" name="q18" value="D"> D) A merge where the base branch pointer is moved forward to match the target branch  </label>
+            </div>
+            <div class="question">
+                <p>19. Which command is used to display all branches in a Git repository?  </p>
+                <label><input type="radio" name="q19" value="A"> A) git log –branches
+                </label><br>
+                <label><input type="radio" name="q19" value="B"> B) git checkout -b  </label><br>
+                <label><input type="radio" name="q19" value="C"> C) git branch -a 
+                </label><br>
+                <label><input type="radio" name="q19" value="D"> D)None of These </label>
+            </div>
+            <div class="question">
+                <p>20.Which command updates the main branch with the latest changes from the remote repository before merging? </p>
+                <label><input type="radio" name="q20" value="A"> A) git pull 
+                </label><br>
+                <label><input type="radio" name="q20" value="B"> B) git fetch </label><br>
+                <label><input type="radio" name="q20" value="C"> C) git merge 
+                </label><br>
+                <label><input type="radio" name="q20" value="D"> D)git clone </label>
+            </div>
 
             <button type="button" onclick="submitQuiz()">Submit</button>
         </form>
@@ -177,6 +267,16 @@ button:active {
                 q8: "C", // Correct answer for question 8
                 q9: "A",  // Correct answer for question 9
                 q10: "C", // Correct answer for question 10
+                q11: "B", // Correct answer for question 11
+                q12: "D", // Correct answer for question 12
+                q13: "A",  // Correct answer for question 13
+                q14: "B", // Correct answer for question 14
+                q15: "D", // Correct answer for question 15
+                q16: "C", // Correct answer for question 16
+                q17: "A",  // Correct answer for question 17
+                q18: "D", // Correct answer for question 18
+                q19: "C",  // Correct answer for question 19
+                q20: "A", // Correct answer for question 20
             };
 
             const form = document.getElementById("quizForm");
@@ -190,7 +290,7 @@ button:active {
             }
 
             // Display score in prompt
-            Swal.fire("Your score is: " + score + " out of 10");
+            Swal.fire("Your score is: " + score + " out of 20");
           
         }
 
